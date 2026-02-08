@@ -1,0 +1,6 @@
+
+{
+  "name": "Scuderia Vision - Ferrari Showcase",
+  "description": "A high-end, luxury dealership showcase for Ferrari, featuring immersive 3D-inspired animations, interactive car galleries, and an AI-powered concierge for a premium digital experience.",
+  "requestFramePermissions": ["camera", "microphone"]
+}

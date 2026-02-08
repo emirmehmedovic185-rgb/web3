@@ -1,0 +1,95 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scuderia Vision | Ferrari Excellence</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script type="module" src="https://ajax.googleapis.com/ajax/libs/model-viewer/4.0.0/model-viewer.min.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;700;900&family=Outfit:wght@200;300;400;600;700;800&family=Bebas+Neue&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --font-display: 'Cinzel', serif;
+            --font-body: 'Outfit', sans-serif;
+            --font-accent: 'Bebas Neue', cursive;
+        }
+        body {
+            font-family: var(--font-body);
+            background-color: #050505;
+            color: #ffffff;
+            overflow-x: hidden;
+            letter-spacing: -0.01em;
+        }
+        h1, h2, h3, h4, h5, h6, .font-serif {
+            font-family: var(--font-display);
+        }
+        .font-accent {
+            font-family: var(--font-accent);
+        }
+        .scuderia-red {
+            color: #e30613;
+        }
+        .bg-scuderia-red {
+            background-color: #e30613;
+        }
+        ::-webkit-scrollbar {
+            width: 8px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #050505;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #e30613;
+            border-radius: 0;
+        }
+        .glass-morphism {
+            background: rgba(255, 255, 255, 0.02);
+            backdrop-filter: blur(20px);
+            border: 1px solid rgba(255, 255, 255, 0.08);
+        }
+        model-viewer {
+            width: 100%;
+            height: 100%;
+            background-color: transparent;
+            --poster-color: transparent;
+        }
+        @keyframes drift {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+        }
+        .animate-drift {
+            animation: drift 40s linear infinite;
+        }
+        
+        /* Smooth page transitions and scrolling */
+        html {
+            scroll-behavior: smooth;
+        }
+        
+        * {
+            -webkit-font-smoothing: antialiased;
+            -moz-osx-font-smoothing: grayscale;
+        }
+    </style>
+<script type="importmap">
+{
+  "imports": {
+    "react/": "https://esm.sh/react@^19.2.4/",
+    "react": "https://esm.sh/react@^19.2.4",
+    "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+    "@google/genai": "https://esm.sh/@google/genai@^1.40.0",
+    "framer-motion": "https://esm.sh/framer-motion@^12.33.0",
+    "lucide-react": "https://esm.sh/lucide-react@^0.563.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+<body>
+    <div id="root"></div>
+<script type="module" src="/index.tsx"></script>
+</body>
+</html>
